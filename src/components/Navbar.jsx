@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {Link} from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,11 +11,12 @@ export default function Navbar() {
 
         {/* Desktop menu */}
         <div className="hidden md:flex space-x-6">
-          <a href="#home" className="hover:text-yellow-400">Home</a>
-          <a href="#products" className="hover:text-yellow-400">Products</a>
-          <a href="#about" className="hover:text-yellow-400">About</a>
-          <a href="#contact" className="hover:text-yellow-400">Contact</a>
-          <a href="#services" className="hover:text-yellow-400">Services</a>
+          <Link to="/" className="hover:text-yellow-400">Home</Link>
+          <Link to="/products" className="hover:text-yellow-400">Products</Link>
+          <Link to="/about" className="hover:text-yellow-400">About</Link>
+          <Link to="/contact" className="hover:text-yellow-400">Contact</Link>
+          <Link to="/services" className="hover:text-yellow-400">Services</Link>
+          <Link to="/testimonials" className="hover:text-yellow-400">Testimonials</Link>
         </div>
 
         {/* Mobile menu button */}
@@ -29,11 +31,11 @@ export default function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden flex flex-col bg-gray-700 p-4 space-y-2">
-          <a href="#home">Home</a>
-          <a href="#products">Products</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <a href="#services">Services</a>
+          <Link to="/">Home</Link>
+          <Link to="/products">Products</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/services">Services</Link>
         </div>
       )}
     </nav>
