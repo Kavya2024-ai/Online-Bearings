@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import logo from "../assets/Images/logo.png";
+import { Link } from "react-router-dom";
 
 const SecondaryNavbar = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -76,9 +77,12 @@ const SecondaryNavbar = () => {
                 </span>
               )}
             </button>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-              Sign In / Register
-            </button>
+            <Link
+          to="/signin"
+          className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+        >
+          Sign In / Register
+        </Link>
           </div>
         </div>
       </div>

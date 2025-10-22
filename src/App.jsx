@@ -9,6 +9,8 @@ import ProductsSection from "./components/ProductsSection";
 import ServicesSection from "./components/ServicesSection";
 import HeroSection from "./components/HeroSection";
 import TestimonialsSection from "./components/TestimonialsSection";
+import SignIn from "./pages/SignIn";
+import Register from "./pages/Register";
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
           <Route path="/services" element={<ServicesSection/>}/>
           <Route path="/contact" element={<ContactForm/>}/>
           <Route path="/testimonials" element={<TestimonialsSection/>}/>
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/register" element={<Register />} />
           
         </Routes>
         
