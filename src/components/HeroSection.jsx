@@ -3,15 +3,15 @@ import logo from "../assets/Images/logo.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gray-50 h-[80vh] flex flex-col justify-center items-center text-center px-6">
-      {/* 🔹 Logo area (if you already added your image logo above, keep it) */}
+    <section className="relative bg-gray-50 h-[80vh] flex flex-col justify-center items-center text-center px-6 ">
+      
       <img
-        src={logo} // replace with your actual logo path
+        src={logo} 
         alt="Website Logo"
         className="w-55 h-45 mb-6"
       />
 
-      {/* 🔹 Hero text content */}
+      
       <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
         Discover the Best Deals Online
       </h1>

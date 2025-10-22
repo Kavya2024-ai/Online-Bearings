@@ -10,7 +10,7 @@ const SubscribeSection = () => {
 
     if (!email) return;
 
-    // Here you can connect to a newsletter API later if needed
+    
     setSubscribed(true);
     setEmail("");
     setTimeout(() => setSubscribed(false), 4000);

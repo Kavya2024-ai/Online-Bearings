@@ -1,4 +1,4 @@
-// Import all product images
+
 import ball from "../assets/Images/ball.jpg";
 import roller from "../assets/Images/roller.jpg";
 import needle from "../assets/Images/needle.jpg";
